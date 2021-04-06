@@ -87,7 +87,7 @@ function e.FindKeyStone(sendUpdate, anounceKey)
 	if UnitLevel('player') < e.EXPANSION_LEVEL then return end
 
 	local mapID = C_MythicPlus.GetOwnedKeystoneChallengeMapID()
-	local keyLevel = C_MythicPlus.GetOwnedKeystoneLevel()
+	local keyLevel = C_MythicPlus.GetOwnedKeystoneLevel() + 15
 	local weeklyBest = 0
 	local isChestAvailable = C_MythicPlus.IsWeeklyRewardAvailable()
 	
